@@ -1,0 +1,13 @@
+{
+  "files.eol": "\n",
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "files.associations": {
+    "*.vue": "html"
+  }
+}
