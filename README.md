@@ -16,7 +16,7 @@ Required Visual Studio Code extensions
 npm install
 
 # serve with hot reload at localhost:8080 and custom backend base URL for axios
-npm run dev -- --SERVER_URL=http://192.168.0.1:1200
+npm run dev mat -- --SERVER_URL="http://192.168.0.1:1200"
 
 # build for production with minification
 npm run build
