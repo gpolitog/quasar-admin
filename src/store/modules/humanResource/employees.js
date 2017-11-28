@@ -1,20 +1,22 @@
+import deepFreeze from 'deep-freeze';
+
 import api from 'api/humanResource/employees';
 
 export default {
   namespaced: true,
   state: {
-    all: [],
+    data: null,
   },
   mutations: {
-    setAll(state, data) {
-      state.all = data;
+    setData(state, data) {
+      state.data = deepFreeze(data);
     },
   },
   actions: {
-    async getAll({ commit }) {
-      const data = await api.getAll();
+    async getData({ commit }) {
+      const data = await api.getData();
 
-      commit('setAll', data);
+      commit('setData', data);
     },
   },
 };

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default {
-  async getAll() {
+  async getData() {
     try {
       return (await axios.get('/AdminEmployees')).data;
     } catch (error) {
